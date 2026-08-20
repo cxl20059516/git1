@@ -1,0 +1,63 @@
+# ============================================
+# 通用 .gitignore —— 把不相干的文件挡在仓库外
+# 规则：匹配到的文件不会被 git add / commit
+# ============================================
+
+# ---------- Windows 系统垃圾 ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---------- macOS 系统垃圾 ----------
+.DS_Store
+
+# ---------- 编辑器 / IDE 配置 ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.code-workspace
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# ---------- Node.js ----------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# ---------- 构建产物 ----------
+dist/
+build/
+out/
+target/
+
+# ---------- 环境变量 / 密钥（重点！）----------
+.env
+.env.*
+!.env.example
+
+# ---------- 日志 ----------
+logs/
+*.log
+
+# ---------- 临时文件 / 备份 ----------
+*.tmp
+*.temp
+*.bak
+*.old
+.~lock.*
